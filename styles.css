@@ -1,15 +1,34 @@
 body {
     margin: 0;
 }
-ul {
-    list-style-type: none;
-}
-.strip {
-    text-align: center;
-    background-color: rgb(200, 200, 200);
+
+.header {
+    background-color: rgb(150, 150, 150);
     margin: 0;
     border: 1px solid rgb(224, 224, 224);
     padding-bottom: 2.5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header > * {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.rolls {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(200, 200, 200);
+}
+
+.rolls > * {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -28,9 +47,15 @@ ul {
     text-align: center;
     position: relative;
 }
+
+ul {
+    list-style-type: none;
+}
+
 li {
     border: 1px solid black;
 }
+
 .center {
     position: absolute;
     background-color: white;
