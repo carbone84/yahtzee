@@ -32,20 +32,24 @@ body {
 }
 
 .container {
-    background-color: rgb(0, 153, 255);
-    max-width: 300px;
+    max-width: 50%;
     margin: 2.5% auto;
+    display: flex;
 }
 
 .dice {
-    width: 15%;
+    width: 14%;
     background-color: red;
-    padding-bottom: 15%;
-    margin: 2.5%;
+    padding-bottom: 14%;
+    margin: 3%;
     float: left;
     border-radius: 8%;
     text-align: center;
     position: relative;
+}
+
+.dice:hover {
+    box-shadow: 0 0 0 .5em greenyellow;
 }
 
 ul {
@@ -106,6 +110,25 @@ li {
     right: 10%;
 }
 
-/* .selected {
+.selected {
+    box-shadow: 0 0 0 .5em greenyellow;
+}
 
-} */
+.scorecard {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.label {
+    width: 200px;
+}
